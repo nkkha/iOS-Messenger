@@ -21,6 +21,7 @@
 		63BAD41624ECD72C001C91B0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BAD41524ECD72C001C91B0 /* ProfileViewController.swift */; };
 		63BAD41924ECDD33001C91B0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BAD41824ECDD33001C91B0 /* Extensions.swift */; };
 		63BAD41B24ED0633001C91B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63BAD41A24ED0633001C91B0 /* GoogleService-Info.plist */; };
+		63BAD41D24ED0F77001C91B0 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BAD41C24ED0F77001C91B0 /* DatabaseManager.swift */; };
 		E3322B890C6E6099D3CDA1C7 /* Pods_Messenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49CFA9A65C1D93FE2E81FB86 /* Pods_Messenger.framework */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		63BAD41524ECD72C001C91B0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		63BAD41824ECDD33001C91B0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		63BAD41A24ED0633001C91B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		63BAD41C24ED0F77001C91B0 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		9FD40AAA1DCF17862CAFCA8E /* Pods-Messenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messenger.release.xcconfig"; path = "Target Support Files/Pods-Messenger/Pods-Messenger.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 				63BAD3F124ECD427001C91B0 /* AppDelegate.swift */,
 				63BAD3F324ECD427001C91B0 /* SceneDelegate.swift */,
 				63BAD41824ECDD33001C91B0 /* Extensions.swift */,
+				63BAD41C24ED0F77001C91B0 /* DatabaseManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -288,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63BAD40C24ECD6BD001C91B0 /* LoginViewController.swift in Sources */,
+				63BAD41D24ED0F77001C91B0 /* DatabaseManager.swift in Sources */,
 				63BAD40E24ECD6D7001C91B0 /* RegisterViewController.swift in Sources */,
 				63BAD41424ECD71D001C91B0 /* NewConversationViewController.swift in Sources */,
 				63BAD3F624ECD427001C91B0 /* ConversationsViewController.swift in Sources */,
