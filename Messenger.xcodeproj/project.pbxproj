@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		634316FC24EE27C6002B7FE1 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634316FB24EE27C6002B7FE1 /* ChatViewController.swift */; };
+		634316FE24EE335C002B7FE1 /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634316FD24EE335C002B7FE1 /* StorageManager.swift */; };
 		63BAD3F224ECD427001C91B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BAD3F124ECD427001C91B0 /* AppDelegate.swift */; };
 		63BAD3F424ECD427001C91B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BAD3F324ECD427001C91B0 /* SceneDelegate.swift */; };
 		63BAD3F624ECD427001C91B0 /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BAD3F524ECD427001C91B0 /* ConversationsViewController.swift */; };
@@ -28,6 +30,8 @@
 /* Begin PBXFileReference section */
 		49CFA9A65C1D93FE2E81FB86 /* Pods_Messenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Messenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		57CDE2AADF44BECACF869AD3 /* Pods-Messenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Messenger.debug.xcconfig"; path = "Target Support Files/Pods-Messenger/Pods-Messenger.debug.xcconfig"; sourceTree = "<group>"; };
+		634316FB24EE27C6002B7FE1 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		634316FD24EE335C002B7FE1 /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
 		63BAD3EE24ECD427001C91B0 /* Messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63BAD3F124ECD427001C91B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63BAD3F324ECD427001C91B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +129,7 @@
 				63BAD41124ECD707001C91B0 /* VideoPlayerViewController.swift */,
 				63BAD41324ECD71D001C91B0 /* NewConversationViewController.swift */,
 				63BAD41524ECD72C001C91B0 /* ProfileViewController.swift */,
+				634316FB24EE27C6002B7FE1 /* ChatViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -136,6 +141,7 @@
 				63BAD3F324ECD427001C91B0 /* SceneDelegate.swift */,
 				63BAD41824ECDD33001C91B0 /* Extensions.swift */,
 				63BAD41C24ED0F77001C91B0 /* DatabaseManager.swift */,
+				634316FD24EE335C002B7FE1 /* StorageManager.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -318,7 +324,9 @@
 				63BAD3F224ECD427001C91B0 /* AppDelegate.swift in Sources */,
 				63BAD41624ECD72C001C91B0 /* ProfileViewController.swift in Sources */,
 				63BAD3F424ECD427001C91B0 /* SceneDelegate.swift in Sources */,
+				634316FC24EE27C6002B7FE1 /* ChatViewController.swift in Sources */,
 				63BAD41024ECD6F2001C91B0 /* PhotoViewerViewController.swift in Sources */,
+				634316FE24EE335C002B7FE1 /* StorageManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
