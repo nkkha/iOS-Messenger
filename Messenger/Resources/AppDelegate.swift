@@ -91,7 +91,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
                                         print("Storage manager error: \(error)")
                                     }
                                 })
-                                }).resume()
+                            }).resume()
                         }
                     }
                 })
