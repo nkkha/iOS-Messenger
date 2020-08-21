@@ -8,6 +8,7 @@
 
 import Foundation
 import FirebaseDatabase
+import MessageKit
 
 final class DatabaseManager {
     
@@ -369,6 +370,26 @@ extension DatabaseManager {
                         return nil
                 }
                 
+                var kind: MessageKind?
+                if type == "photo" {
+                    // Photo
+                    guard let imageUrl = URL(string: content),
+                        let placeHolder = UIImage(systemName: "plus") else {
+                            return nil
+                    }
+                    let media = Media(url: imageUrl,
+                                      image: nil,
+                                      placeholderImage: placeHolder,
+                                      size: CGSize(width: 300, height: 300))
+                    kind = .photo(media)
+                } else {
+                    kind = .text(content)
+                }
+                
+                guard let finalKind = kind else {
+                    return nil
+                }
+                
                 let sender = Sender(senderId: senderEmail,
                                     displayName: name,
                                     photoURL: "")
@@ -376,7 +397,7 @@ extension DatabaseManager {
                 return Message(sender: sender,
                                messageId: messageId,
                                sentDate: date,
-                               kind: .text(content))
+                               kind: finalKind)
             })
             
             completion(.success(messages))
@@ -417,7 +438,10 @@ extension DatabaseManager {
                 break
             case .attributedText(_):
                 break
-            case .photo(_):
+            case .photo(let mediaItem):
+                if let targetUrlString = mediaItem.url?.absoluteString {
+                    message = targetUrlString
+                }
                 break
             case .video(_):
                 break
@@ -531,7 +555,7 @@ extension DatabaseManager {
                                     completion(false)
                                     return
                                 }
-                                
+
                                 completion(true)
                             })
                         })
