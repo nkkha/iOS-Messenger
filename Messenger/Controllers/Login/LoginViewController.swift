@@ -85,7 +85,6 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         
         loginObserver = NotificationCenter.default.addObserver(forName: Notification.Name.didLogInNotification, object: nil, queue: .main, using: { [weak self] _ in
-            
             guard let strongSelf = self else {
                 return
             }
